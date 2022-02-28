@@ -1,7 +1,7 @@
 name = "Glutils"
 uuid = "47b77be7-d9e4-4538-b608-5fa06fae5f49"
 authors = ["jorge-brito <jorge.brito.json@gmail.com>"]
-version = "0.0.1"
+version = "0.0.2"
 
 [deps]
 CSyntax = "ea656a56-6ca6-5dda-bba5-7b6963a5f74c"
@@ -19,4 +19,4 @@ Colors = "5ae59095-9a9b-59fe-a467-6f913c188581"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test", "GLFW", "Colors"]
+test = ["Test"]
