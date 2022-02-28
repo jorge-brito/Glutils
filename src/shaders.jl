@@ -53,7 +53,7 @@ end
 
    @c glGetActiveUniform(program, index, buff_size, &len, &size, &type, _name)
 
-   name = String(_name[1:end-1])
+   name = String(_name[1:len])
    location = glGetUniformLocation(program, name)
 
    return name, location, type, size
@@ -75,7 +75,7 @@ end
 
    @c glGetActiveAttrib(program, index, buff_size, &len, &size, &type, name)
 
-   return String(name[1:end-1]), size, type
+   return String(name[1:len]), size, type
 end
 
 @export function active_attributes(program::Cuint)

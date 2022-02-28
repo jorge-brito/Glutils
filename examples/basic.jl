@@ -36,6 +36,8 @@ program = create_program(
    create_shader("shaders/simple.frag"),
 )
 
+@show active_uniforms(program)
+
 function onupdate(dt)
    bindvao!(vao)
    bindprogram!(program)
